@@ -1,0 +1,17 @@
+/// <reference types="react" />
+import React from 'react';
+export interface CardHeaderProps {
+    title?: any;
+    thumb?: string;
+    extra?: any;
+    thumbStyle?: {};
+    style?: any;
+    styles: any;
+}
+export default class CardHeader extends React.Component<CardHeaderProps, any> {
+    static defaultProps: {
+        thumbStyle: {};
+        style: {};
+    };
+    render(): JSX.Element;
+}
