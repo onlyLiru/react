@@ -1,12 +1,12 @@
 {
-  "name": "wb02",
+  "name": "fancyReactAntd",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "start": "webpack-dev-server --devtool eval --progress --colors --hot --inline --content-base dist",
+    "start": "webpack-dev-server --devtool eval --progress --colors --hot --inline --content-base",
     "server": "node server.js",
     "watch": "webpack --progress --colors --watch",
     "deploy": "NODE_ENV=production webpack --progress --colors -p --config webpack.production.config.js"
@@ -54,8 +54,5 @@
     "sass-loader": "^6.0.3",
     "style-loader": "^0.14.1",
     "url-loader": "^0.5.8"
-  },
-  "theme": {
-    "@primary-color": "#e23459"
   }
 }

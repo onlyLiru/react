@@ -8,6 +8,7 @@ import {
   Link,
   IndexRoute,
 } from 'react-router';
+import './css/index.less';
 import Home from './home/index.js';
 import Topics from './topics/index.js';
 import About from './about/index.js';

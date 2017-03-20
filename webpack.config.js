@@ -27,7 +27,7 @@ const config = {
 				loader:'style-loader!css-loader!postcss-loader'
 			},
 			{
-				test:/\.less$/,
+				test:/\.less$/i,
 				use: extractLESS.extract([ 'css-loader', 'postcss-loader', 'less-loader' ])
 			},
 			{
