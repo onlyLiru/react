@@ -70,7 +70,10 @@ var config = {
 		}),
 		new webpack.optimize.AggressiveMergingPlugin(),
 		new webpack.NoEmitOnErrorsPlugin()
-	]
+	],
+	resolve: {
+      extensions: ['.web.tsx', '.web.ts', '.web.jsx', '.web.js', '.ts', '.tsx', '.js', '.jsx', '.json'],
+    }
 };
 
 module.exports = config;
