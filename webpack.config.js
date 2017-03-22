@@ -6,11 +6,12 @@ const extractLESS = new ExtractTextPlugin('css/[name].css');
 
 const config = {
 	entry: {
-		index:path.resolve(__dirname, 'src/main.js'),
+		index:path.resolve(__dirname, './src/main.js'),
 		vendors: ['react']
 	},
 	output: {
-		path: path.resolve(__dirname, 'dist'),
+		path: path.resolve(__dirname, './dist/'),
+		publicPath: path.resolve(__dirname, '/dist/'),
 		filename: '[name].js'
 	},
 	module: {
