@@ -17869,6 +17869,18 @@ span.ant-transfer-list-search-action {
   color: #fff;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2) inset;
 }
+.cHead.bgYellow i.anticon {
+  font-size: 16px;
+  vertical-align: middle;
+}
+.cHead.bgBlue i.anticon {
+  font-size: 20px;
+  vertical-align: middle;
+}
+.cHead.bgBlack i.anticon {
+  font-size: 18px;
+  vertical-align: middle;
+}
 .imgIndex {
   text-align: center;
   position: relative;
@@ -17880,4 +17892,7 @@ span.ant-transfer-list-search-action {
 .mainMenu {
   background-color: #fafafa;
   min-height: 800px;
+}
+.mainMenu .ant-menu {
+  background-color: transparent;
 }

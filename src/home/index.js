@@ -4,7 +4,7 @@ const { Header, Footer, Sider, Content } = Layout;
 import { IndexHeader } from '../common/header.js';
 import ImgIndex from '../common/imgIndex.js';
 import MainMenu from '../common/menu.js';
-import MainContent from '../common/main.js';
+import MainContent from './main.js';
 
 export default class Home extends React.Component {
   render() {

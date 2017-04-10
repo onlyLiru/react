@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Icon } from 'antd';
 
 export default class ImgIndex extends Component {
 	constructor(props) {
@@ -10,7 +11,7 @@ export default class ImgIndex extends Component {
 	render() {
 		return (<div>
 			<div className="cHead bgYellow">
-				App 前台预览
+				<Icon type="mobile" /> App 前台预览
 			</div>
 			<div className="imgIndex">
 				<img src="http://img.fancyedu.com/sys/ic/operation/1491792965248_a.png" />
