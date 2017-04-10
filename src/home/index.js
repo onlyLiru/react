@@ -1,23 +1,32 @@
 import React, { Component } from 'react';
-import { DatePicker,Button,Steps } from 'antd';
-const Step = Steps.Step;
-
+import { Layout,Row, Col } from 'antd';
+const { Header, Footer, Sider, Content } = Layout;
+import { IndexHeader } from '../common/header.js';
+import ImgIndex from '../common/imgIndex.js';
+import MainMenu from '../common/menu.js';
+import MainContent from '../common/main.js';
 
 export default class Home extends React.Component {
   render() {
+  	
 	const id= this.props.location.query.id;
   	return (<div>
-  		<h1>Home React .js</h1>
-  		<DatePicker />
-  		<Button type="primary">Primary</Button>
-	    <Button>Default</Button>
-	    <Button type="dashed">Dashed</Button>
-	    <Button type="danger">Danger</Button>
-	    <Steps current={1}>
-	        <Step title="Finished" description="This is a description." />
-	        <Step title="In Progress" description="This is a description." />
-	        <Step title="Waiting" description="This is a description." />
-	      </Steps>
+      <Layout>
+         <IndexHeader />
+         <Content>
+            <Row>
+              <Col span={6} > 
+                 <ImgIndex />
+              </Col>
+              <Col span={4} > 
+                 <MainMenu />
+              </Col>
+              <Col span={14}>
+                 <MainContent />
+              </Col>
+            </Row>
+         </Content>
+       </Layout>
   	</div>);
   }
 }

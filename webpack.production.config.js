@@ -2,15 +2,15 @@ var path = require('path');
 var webpack = require('webpack');
 var node_modules_dir = path.resolve(__dirname, 'node_modules');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const extractLESS = new ExtractTextPlugin('css/[name].css');
+const extractLESS = new ExtractTextPlugin('./../css/[name].css');
 
 var config = {
   	entry: {
 		index:path.resolve(__dirname, 'src/main.js'),
-		vendors: ['antd']
+		vendors: ['react','antd']
 	},
 	output: {
-		path: path.resolve(__dirname, 'dist'),
+		path: path.resolve(__dirname, 'dist/js/'),
 		filename: '[name].js'
 	},
 	module: {

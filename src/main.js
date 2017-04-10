@@ -8,19 +8,14 @@ import {
   Link,
   IndexRoute,
 } from 'react-router';
-import './css/index.less';
 import Home from './home/index.js';
 import Topics from './topics/index.js';
 import About from './about/index.js';
+import './css/index.less';
 
 class Main extends Component {
 	render() {
 		return (<div>
-      <ul>
-        <li><Link to="/index">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
-        <li><Link to="/topics">Topics</Link></li>
-      </ul>
 			{ this.props.children }
 		</div>);
 	}

@@ -1,6 +1,56 @@
 @import "initAntd.less";
-body {
-	background-color: #fff;
-	font-size:12px;
-	color: #444;
+@bgYellow : #FFC300;
+@bgBlue : #0099CC;
+@bgBlack :#22282D;
+
+.bgYellow {
+	background:@bgYellow;
+}
+.bgBlue {
+	background-color:@bgBlue;
+}
+.bgBlack {
+	background-color:@bgBlack
+}
+
+.pd10 {
+	padding:10px;
+}
+
+.topMenu {
+	a {
+		display:inline-block;
+		margin-right:36px;
+		line-height:40px;
+		img {
+			width:26px;
+			height:26px;
+			vertical-align:middle;
+		}
+	}
+	a.active {
+		border-bottom:solid 4px @primary-color;
+	}
+}
+
+.cHead {
+	height:40px;
+	line-height:40px;
+	padding:0 10px;
+	color:#fff;
+	box-shadow:0px 3px 6px rgba(0,0,0,0.2) inset
+}
+
+.imgIndex {
+	text-align:center;
+	position:relative;
+	padding-top:30px;
+	img {
+		width:96%;
+	}
+}
+
+.mainMenu {
+	background-color:#fafafa;
+	min-height:800px;
 }

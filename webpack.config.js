@@ -4,22 +4,7 @@ var webpack = require('webpack');
 var node_modules_dir = path.resolve(__dirname, 'node_modules');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 var pathToReact = path.resolve(node_modules_dir, 'react/dist/react.min.js');
-const extractLESS = new ExtractTextPlugin('css/[name].css');
-
-// const pkg = require('./package.json') || {};
-// let theme = {};
-//   if (pkg.theme && typeof(pkg.theme) === 'string') {
-//     let cfgPath = pkg.theme;
-//     // relative path
-//     if (cfgPath.charAt(0) === '.') {
-//       cfgPath = resolve(args.cwd, cfgPath);
-//     }
-//     const getThemeConfig = require(cfgPath);
-//     theme = getThemeConfig();
-//   } else if (pkg.theme && typeof(pkg.theme) === 'object') {
-//     theme = pkg.theme;
-// }
-// console.log(theme);
+const extractLESS = new ExtractTextPlugin('./../css/[name].css');
 
 const config = {
 	entry: {
@@ -27,8 +12,8 @@ const config = {
 		vendors: ['react']
 	},
 	output: {
-		path: path.resolve(__dirname, './dist/'),
-		publicPath: path.resolve(__dirname, '/dist/'),
+		path: path.resolve(__dirname, './dist/js/'),
+		publicPath: path.resolve(__dirname, '/dist/js/'),
 		filename: '[name].js'
 	},
 	module: {
@@ -46,7 +31,10 @@ const config = {
 			},
 			{
 				test:/\.less$/i,
-				use: extractLESS.extract([ 'css-loader', 'postcss-loader', 'less-loader' ])
+				use: extractLESS.extract({
+					fallback: 'style-loader',
+					use:['css-loader','postcss-loader','less-loader' ]
+				})
 			},
 			{
 				test:/\.scss$/,
@@ -60,14 +48,6 @@ const config = {
 				test: /\.(mp4|ogg|svg)$/,
 				loader: 'file-loader'
 			},
-			// {
-	  //         test: /\.module\.less$/,
-	  //         loader: ExtractTextPlugin.extract(
-	  //           'css-loader?sourceMap&modules&localIdentName=[local]___[hash:base64:5]!' +
-	  //           'postcss-loader!' +
-	  //           `less-loader?{"sourceMap":true,"modifyVars":${JSON.stringify(theme)}}`
-	  //         ),
-	  //       }
 		],
 		noParse: [
 			/$react.min\.js/,
