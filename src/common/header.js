@@ -7,7 +7,7 @@ const MenuItemGroup = Menu.ItemGroup;
 const IndexHeader = (props)=> {
 	return (<Header>
 		<span className="topMenu">
-			<a className="active" href="javascript:">
+			<a className="active" href="/">
 				<img src="http://img.fancyedu.com/sys/ic/operation/1491792944269_i.png" />
 			</a>
 			<a href="javascript:">
