@@ -1,3 +1,18 @@
+.mediaList {
+  padding: 15px 0;
+  border-bottom: solid 1px #ddd;
+}
+.mediaList .rightMes {
+  line-height: 24px;
+}
+.mediaList .btns {
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}
+.mediaList:last-child {
+  border: none;
+}
 @font-face {
   font-family: "Helvetica Neue For Number";
   src: local("Helvetica Neue");
@@ -17963,6 +17978,10 @@ span.ant-transfer-list-search-action {
 .ant-layout {
   background-color: #fff;
 }
+#root {
+  min-width: 1024px;
+  margin: 0 auto;
+}
 .bgYellow {
   background: #FFC300;
 }
@@ -17972,8 +17991,37 @@ span.ant-transfer-list-search-action {
 .bgBlack {
   background-color: #22282D;
 }
+.mr10 {
+  margin-right: 10px;
+}
+.ml10 {
+  margin-left: 10px;
+}
+.mt10 {
+  margin-top: 10px;
+}
+.mb10 {
+  margin-bottom: 10px;
+}
 .pd10 {
   padding: 10px;
+}
+.pdt10 {
+  padding-top: 10px;
+}
+.pdb10 {
+  padding-bottom: 10px;
+}
+.pdl10 {
+  padding-left: 10px;
+}
+.pdr10 {
+  padding-right: 10px;
+}
+img.autoImg,
+autoImg img {
+  width: 100%;
+  vertical-align: top;
 }
 .topMenu a {
   display: inline-block;
@@ -18053,4 +18101,25 @@ span.ant-transfer-list-search-action {
 }
 #mainMenu .ant-tree-switcher::after {
   opacity: 0;
+}
+.imgList {
+  position: relative;
+  border-bottom: solid 1px #ddd;
+  padding: 10px 0;
+}
+.imgList .imgMes {
+  line-height: 28px;
+  margin-bottom: 10px;
+}
+.imgList .btns {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  z-index: 2;
+}
+.imgList .edit {
+  margin-right: 10px;
+}
+.imgList:last-child {
+  border: none;
 }

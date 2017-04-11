@@ -21,7 +21,7 @@ export default class MainMenu extends Component {
 			        showIcon
 			        showLine
 			        defaultExpandedKeys={['0-0-0']}
-			        defaultSelectedKeys={['0-0']}
+			        defaultSelectedKeys={['0-0-0']}
 			        onSelect={this.onSelect.bind(this)}
 			      >
 			        <TreeNode title="广告栏" key="0-0">
@@ -49,9 +49,11 @@ export default class MainMenu extends Component {
 			</div>
 		</div>);
 	}
-
 	onSelect(selectedKeys, info) {
-	   console.log('selected', selectedKeys, info);
+		console.log('selected', selectedKeys, info);
+		if(selectedKeys=='0-1'){
+			location.href="/index/homeRecommend";
+		}
 	}
 	
 }

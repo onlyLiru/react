@@ -5,6 +5,7 @@ import { IndexHeader } from '../common/header.js';
 import ImgIndex from '../common/imgIndex.js';
 import MainMenu from './menu.js';
 import MainContent from './main.js';
+import './index.less';
 
 export default class Home extends React.Component {
   render() {
