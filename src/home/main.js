@@ -15,7 +15,7 @@ export default class MainContent extends Component {
 					<Icon type="edit" /> 内容编辑
 				</div>
 				<div className="mainContent pd10">
-					adsf
+					
 				</div>
 			</div>
 		</div>);
