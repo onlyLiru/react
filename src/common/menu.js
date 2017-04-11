@@ -16,7 +16,7 @@ export default class MainMenu extends Component {
 				<div className="cHead bgBlue">
 					<Icon type="bars" /> 内容列表
 				</div>
-				<div className="mainMenu" id="components-tree-demo-customized-icon">
+				<div className="mainMenu" id="mainMenu">
 					<Tree
 			        showIcon
 			        showLine
