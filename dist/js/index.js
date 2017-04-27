@@ -48424,7 +48424,7 @@ var ImgIndex = function (_Component) {
 				_react2.default.createElement(
 					'div',
 					{ className: 'imgIndex' },
-					_react2.default.createElement('img', { src: 'http://img.fancyedu.com/sys/ic/operation/1491792965248_a.png' })
+					_react2.default.createElement('img', { src: 'http://img.fancyedu.com/sys/ic/operation/1491792971221_b.png' })
 				)
 			);
 		}
@@ -49393,7 +49393,7 @@ var ImgIndex = function (_Component) {
 				_react2.default.createElement(
 					'div',
 					{ className: 'imgIndex' },
-					_react2.default.createElement('img', { src: 'http://img.fancyedu.com/sys/ic/operation/1491792965248_a.png' })
+					_react2.default.createElement('img', { src: 'http://img.fancyedu.com/sys/ic/operation/1491792977071_c.png' })
 				)
 			);
 		}
@@ -52382,7 +52382,7 @@ var ImgIndex = function (_Component) {
 				_react2.default.createElement(
 					'div',
 					{ className: 'imgIndex' },
-					_react2.default.createElement('img', { src: 'http://img.fancyedu.com/sys/ic/operation/1491792965248_a.png' })
+					_react2.default.createElement('img', { src: 'http://img.fancyedu.com/sys/ic/operation/1491792984542_d.png' })
 				)
 			);
 		}

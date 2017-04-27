@@ -12,7 +12,7 @@ export default class ImgIndex extends Component {
 		return (<div>
 			
 			<div className="imgIndex">
-				<img src="http://img.fancyedu.com/sys/ic/operation/1491792965248_a.png" />
+				<img src="http://img.fancyedu.com/sys/ic/operation/1491792984542_d.png" />
 			</div>
 		</div>);
 	}
