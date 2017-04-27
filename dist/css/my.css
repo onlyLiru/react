@@ -10273,66 +10273,6 @@ form .ant-cascader-picker {
 .mediaList:last-child {
   border: none;
 }
-.mediaList {
-  padding: 15px 0;
-  border-bottom: solid 1px #ddd;
-}
-.mediaList .rightMes {
-  line-height: 24px;
-}
-.mediaList .btns {
-  position: absolute;
-  bottom: 0;
-  right: 20px;
-}
-.mediaList:last-child {
-  border: none;
-}
-.mediaList {
-  padding: 15px 0;
-  border-bottom: solid 1px #ddd;
-}
-.mediaList .rightMes {
-  line-height: 24px;
-}
-.mediaList .btns {
-  position: absolute;
-  bottom: 0;
-  right: 20px;
-}
-.mediaList:last-child {
-  border: none;
-}
-.mediaList {
-  padding: 15px 0;
-  border-bottom: solid 1px #ddd;
-}
-.mediaList .rightMes {
-  line-height: 24px;
-}
-.mediaList .btns {
-  position: absolute;
-  bottom: 0;
-  right: 20px;
-}
-.mediaList:last-child {
-  border: none;
-}
-.mediaList {
-  padding: 15px 0;
-  border-bottom: solid 1px #ddd;
-}
-.mediaList .rightMes {
-  line-height: 24px;
-}
-.mediaList .btns {
-  position: absolute;
-  bottom: 0;
-  right: 20px;
-}
-.mediaList:last-child {
-  border: none;
-}
 @font-face {
   font-family: "Helvetica Neue For Number";
   src: local("Helvetica Neue");

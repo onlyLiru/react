@@ -23,7 +23,7 @@ export default class Home extends React.Component {
     let curKey = this.state.curKey;
   	return (<div>
       <Layout>
-         <IndexHeader cur="home" />
+         <IndexHeader cur="school" />
          <Content>
             <Row>
               <Col span={6} >

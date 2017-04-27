@@ -8,7 +8,7 @@ const extractLESS = new ExtractTextPlugin('./../css/[name].css');
 
 const config = {
 	entry: {
-		index:path.resolve(__dirname, './src/main.js'),
+		index:path.resolve(__dirname, './src/index.js'),
 		vendors: ['react']
 	},
 	output: {
