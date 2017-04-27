@@ -10,9 +10,7 @@ export default class ImgIndex extends Component {
 	}
 	render() {
 		return (<div>
-			<div className="cHead bgYellow">
-				<Icon type="mobile" /> App 前台预览
-			</div>
+			
 			<div className="imgIndex">
 				<img src="http://img.fancyedu.com/sys/ic/operation/1491792965248_a.png" />
 			</div>

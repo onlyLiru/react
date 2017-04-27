@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Icon,Row,Col,Button } from 'antd';
+import './index.less';
 
-export default class MainContent extends Component {
+export default class RecommendMain extends Component {
 	constructor(props) {
 		super(props);
 		this.state={
@@ -12,10 +13,11 @@ export default class MainContent extends Component {
 		return (<div>
 			<div>
 
-				<div className="cHead bgBlack">
-					<Icon type="edit" /> 内容编辑
-				</div>
 				<div className="mainContent pd10">
+
+					<div className="clearfix listTop">
+						<Button className="fr" type="primary" icon="plus-circle-o">新增</Button>
+					</div>
 
 					<Row type="flex" gutter={16} className="mediaList" >
 						<Col span={6} className="leftImg">

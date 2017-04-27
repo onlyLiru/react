@@ -11,7 +11,6 @@ import {
 import Home from './home/index.js';
 import Topics from './topics/index.js';
 import About from './about/index.js';
-import HomeRecommend from './home/recommend/index.js';
 
 import './css/index.less';
 
@@ -35,9 +34,7 @@ render(
 	<Router history={browserHistory}>
       <Route path="/" component={Main}>
         <IndexRoute component={ Home } />
-        <Route path="index">
-          <Route path="homeRecommend" component={ HomeRecommend } />
-        </Route>
+        
         <Route path="about" component={About}/>
         <Route path="topics" component={Topics}/>
       </Route>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Layout,Icon,Menu } from 'antd';
+import { Layout,Icon,Menu,Button } from 'antd';
 const { Header } = Layout;
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
@@ -23,6 +23,7 @@ const IndexHeader = (props)=> {
 				<img src="http://img.fancyedu.com/sys/ic/operation/1491053891740_show1.png" />
 			</a>
 		</span>
+		<Button className="fr submitAllBtn" size="small" type="danger" ghost icon="rocket">一键发布</Button>
     </Header>);
 }
 

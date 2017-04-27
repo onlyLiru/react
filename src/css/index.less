@@ -1,5 +1,4 @@
 @import "initAntd.less";
-@bgYellow : #FFC300;
 @bgBlue : #0099CC;
 @bgBlack :#22282D;
 
@@ -9,7 +8,7 @@
 }
 
 .bgYellow {
-	background:@bgYellow;
+	background:@primary-color;
 }
 .bgBlue {
 	background-color:@bgBlue;
@@ -47,6 +46,73 @@
 	padding-right:10px;
 }
 
+.fl{
+	float:left;
+}
+.fr {
+	float:right;
+}
+
+.line-throuth {
+	text-decoration:line-through;
+}
+.millde{
+	vertical-align: middle;
+}
+
+.ellipsis{
+  text-overflow:ellipsis;
+  -o-text-overflow:ellipsis;
+  -webkit-text-overflow:ellipsis;
+  -moz-text-overflow:ellipsis;
+  white-space:nowrap;
+  overflow: hidden;
+}
+.word-break{
+	word-break: break-all;
+}
+.line1{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.line2,.line3,.line4{
+	overflow : hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+.line2{
+    -webkit-line-clamp: 2;
+}
+.line3{
+    -webkit-line-clamp: 3;
+}
+.line4{
+    -webkit-line-clamp: 4;
+}
+.line5{
+    -webkit-line-clamp: 5;
+}
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide{
+	display:none;
+}
+.block{
+	display:block;
+}
+.overflowHidden{
+	overflow:hidden;
+}
+
 img.autoImg,autoImg img {
 	width:100%;
 	vertical-align:top;
@@ -67,11 +133,15 @@ img.autoImg,autoImg img {
 		border-bottom:solid 4px @primary-color;
 	}
 }
+.submitAllBtn {
+	position:relative;
+	top:25px;
+}
 
 .cHead {
-	height:40px;
-	line-height:40px;
-	padding:0 10px;
+	height:36px;
+	line-height:28px;
+	padding:6px 10px;
 	color:#fff;
 	box-shadow:0px 3px 6px rgba(0,0,0,0.2) inset;
 }
@@ -145,7 +215,7 @@ img.autoImg,autoImg img {
 
 .imgList {
 	position:relative;
-	border-bottom:solid 1px #ddd;
+	border-bottom:solid 1px @border-color-split;
 	padding:10px 0;
 	.imgMes {
 		line-height:28px;
@@ -163,4 +233,31 @@ img.autoImg,autoImg img {
 }
 .imgList:last-child {
 	border:none;
+}
+
+.avatar-uploader,
+.avatar-uploader-trigger{
+  width: 150px;
+  height: 150px;
+  overflow:hidden;
+}
+.avatar {
+  max-width:100%;
+}
+.avatar-uploader {
+  display: block;
+  border: 1px dashed @border-color-base;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.avatar-uploader-trigger {
+  display: table-cell!important;
+  vertical-align: middle!important;
+  font-size: 28px;
+  color: #999;
+}
+
+.listTop {
+	border-bottom:solid 1px @border-color-base;
+	padding-bottom:10px;
 }
